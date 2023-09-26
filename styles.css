@@ -1,0 +1,107 @@
+:root {
+  --main-color: #f5faff;
+  --background-color: #081b33;
+  --prime-color: #228be6;
+  --secondary-color: #88cbfd;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.darkblue {
+  color: var(--prime-color);
+}
+.lightblue {
+  color: var(--secondary-color);
+}
+
+section {
+  display: flex;
+  height: 100vh;
+}
+
+.text-wrapper {
+  margin: auto;
+}
+
+p {
+  text-transform: uppercase;
+  line-height: 0.75;
+  margin: auto;
+}
+
+.first-textfield {
+  width: 350px;
+}
+
+.fontsize-row-one {
+  font-size: 82px;
+}
+.fontsize-row-two {
+  font-size: 114px;
+}
+
+.second-textfield {
+  width: 330px;
+}
+
+.fontsize-row-three {
+  font-size: 260px;
+}
+
+.third-textfiel {
+  width: 300px;
+}
+.fontsize-row-four {
+  font-size: 114px;
+}
+
+.fontsize-row-five {
+  font-size: 62px;
+}
+
+.fourth-textfield {
+  width: 150px;
+  margin: 0;
+  position: relative;
+}
+
+.fontsize-row-six {
+  font-size: 42px;
+}
+.fontsize-row-seven {
+  font-size: 100px;
+}
+
+.fontsize-row-eight {
+  font-size: 60px;
+}
+.fontsize-row-nine {
+  font-size: 92px;
+}
+
+.align-column {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.align-column:hover {
+  animation: textmove 4s linear infinite;
+}
+
+@keyframes textmove {
+  from {
+    left: 0;
+  }
+  to {
+    left: -300px;
+  }
+}
