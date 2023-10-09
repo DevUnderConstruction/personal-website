@@ -11,6 +11,7 @@
 
 body {
   background-color: var(--background-color);
+  position: relative;
 }
 
 .darkblue {
@@ -20,6 +21,10 @@ body {
   color: var(--secondary-color);
 }
 
+.background-blue {
+  color: var(--background-color);
+}
+
 section {
   display: flex;
   height: 100vh;
@@ -27,6 +32,7 @@ section {
 
 .text-wrapper {
   margin: auto;
+  position: relative;
 }
 
 p {
@@ -47,15 +53,15 @@ p {
 }
 
 .second-textfield {
-  width: 330px;
+  width: 350px;
 }
 
 .fontsize-row-three {
-  font-size: 260px;
+  font-size: 280px;
 }
 
-.third-textfiel {
-  width: 300px;
+.third-textfield {
+  width: 350px;
 }
 .fontsize-row-four {
   font-size: 114px;
@@ -69,6 +75,7 @@ p {
   width: 150px;
   margin: 0;
   position: relative;
+  left: 150px;
 }
 
 .fontsize-row-six {
@@ -89,19 +96,78 @@ p {
   width: 450px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
   position: relative;
+  overflow: hidden;
+}
+.fourth-textfield:nth-child(2) {
+  left: 300px;
 }
 
-.align-column:hover {
+.fourth-textfield:hover {
   animation: textmove 4s linear infinite;
 }
 
 @keyframes textmove {
   from {
-    left: 0;
+    left: 150px;
   }
   to {
     left: -300px;
   }
+}
+.first-textfield-shadowlayer {
+  width: 350px;
+  font-size: 148px;
+}
+
+.second-textfield-shadowlayer {
+  width: 350px;
+  margin: 0;
+}
+
+.shadowlayer-fontsize-row-two {
+  font-size: 120px;
+  letter-spacing: 10px;
+}
+
+.shadowlayer-fontsize-row-three {
+  font-size: 98px;
+  letter-spacing: 8px;
+}
+
+.shadowlayer-wrapper {
+  position: absolute;
+  top: 0;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 50px;
+}
+
+.third-textfield-shadowlayer {
+  width: 350px;
+}
+
+.shadowlayer-fontsize-row-four {
+  font-size: 23px;
+}
+
+.shadowlayer-fontsize-row-five {
+  font-size: 56px;
+  letter-spacing: 10px;
+}
+
+.shadowlayer-fontsize-row-six {
+  font-size: 47px;
+  letter-spacing: 14px;
+}
+
+.shadowlayer-fontsize-row-seven {
+  font-size: 76px;
+  letter-spacing: 10px;
 }
