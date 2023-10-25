@@ -13,7 +13,9 @@ body {
   background-color: var(--background-color);
   position: relative;
 }
-
+main {
+  position: relative;
+}
 .darkblue {
   color: var(--prime-color);
 }
@@ -27,6 +29,7 @@ body {
 
 section {
   display: flex;
+  width: 100%;
   height: 100vh;
 }
 
@@ -39,6 +42,7 @@ p {
   text-transform: uppercase;
   line-height: 0.75;
   margin: auto;
+  cursor: none;
 }
 
 .first-textfield {
@@ -135,10 +139,27 @@ p {
   font-size: 98px;
   letter-spacing: 8px;
 }
-
-.shadowlayer-wrapper {
+.shadow {
   position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1000;
+  background-color: var(--main-color);
+  color: var(--background-color);
+  -webkit-mask-image: url(./assets/text-mask.svg);
+  mask-image: url(./assets/text-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-origin: content-box;
+  mask-origin: content-box;
+  -webkit-mask-size: var(--size);
+  mask-size: var(--size);
+  -webkit-mask-position: calc(var(--posX) - var(--size) / 2)
+    calc(var(--posY) - var(--size) / 2);
+  mask-position: calc(var(--posX) - var(--size) / 2)
+    calc(var(--posY) - var(--size) / 2);
 }
 .icon-wrapper {
   display: flex;
